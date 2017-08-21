@@ -1,0 +1,20 @@
+html{
+  height: 100%;
+  font-size: 62.5%;
+}
+body{
+  height: 100%;
+  background-color: $white;
+}
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.submit-button{
+  background-color: $teal;
+  color: $white;
+  &:hover{
+    background-color: lighten($teal, 5);
+  }
+}

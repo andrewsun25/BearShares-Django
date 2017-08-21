@@ -1,0 +1,52 @@
+{% extends "./layouts/head.html" %}
+{% block body %}
+    <body>
+    {% include "./includes/header.html" %}
+    <section class="content">
+        <div class="container-fluid content-container">
+            <div class="row">
+                <div class="col-sm-2 coursesContainer">
+                    <h1>Your Courses</h1>
+                    <div class="list-group coursesLinks">
+                        <a href="#" class="list-group-item active">B50 ACCT 2610</a>
+                        <a href="#" class="list-group-item">ESE ACCT 2610</a>
+                        <a href="#" class="list-group-item">CSE ESE 2610</a>
+                        <a href="#" class="list-group-item">B50 ACCT 2610</a>
+                        <a href="#" class="list-group-item">ENG30 MECHE 2610</a>
+                    </div>
+                    <form method="GET" action="" accept-charset="UTF-8">
+                        <input type="text" class="searchCourse" name="search" placeholder="Search for a new class">
+                    </form>
+                    <button type="button" class="btn btn-primary addCourse">Add a New Class</button>
+                </div>
+                <div class="col-sm-10 resourcesContainer">
+                    <ul class="resourcesList">
+                        <li class="container thread-container">
+                            <div class="row">
+                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum,
+                                    lacus at tempus aliquam, ipsum turpis tincidunt</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <small>Joe Joerod</small>
+                                </div>
+                                <div class="col-sm-2">
+                                    <small>1 hour ago</small>
+                                </div>
+                                <div class="col-sm-4">
+                                </div>
+                                <div class="col-sm-4">
+                                    <small>sad</small>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    </body>
+{% endblock %}
+
